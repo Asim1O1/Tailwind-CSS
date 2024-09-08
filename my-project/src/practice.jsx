@@ -31,14 +31,12 @@ const PlayAround = () => {
           <div className="bg-green-400 h-12 w-12"></div>
           <div className="bg-green-400 h-12 w-12"></div>
           <div className="bg-green-400 h-12 w-12"></div>
-
         </div>
 
         <div className="flex justify-center ">
-
-        <button className=" bg-orange-500 w-20 h-8 rounded-md  ">
-          Click me!
-        </button>
+          <button className=" bg-orange-500 w-20 h-8 rounded-md  text-white hover:bg-orange-600 focus:outline-none  focus:ring-orange-500m active:bg-orange-800">
+            Click me!
+          </button>
         </div>
       </main>
     </>
