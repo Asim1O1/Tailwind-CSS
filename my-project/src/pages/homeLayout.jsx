@@ -10,6 +10,7 @@ import {
   SpecialOffer,
 } from "../Sections";
 import Navbar from "../components/Navbar";
+
 const HomeLayout = () => {
   return (
     <main className="relative">
