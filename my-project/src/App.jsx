@@ -4,6 +4,7 @@ import PlayAround from "./practice";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Rendering from "./components/rendering";
 import Responsive from "./components/Responsive";
+import Todo from "./pages/Todo";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
 
           </Route>
           <Route path={"/render"} element={<Rendering />}></Route>
+          <Route path={"/todo"} element={<Todo/>}></Route>
           <Route path={"/responsive"} element={<Responsive />}></Route>
         </Routes>
       </BrowserRouter>
