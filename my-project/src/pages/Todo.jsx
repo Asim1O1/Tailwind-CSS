@@ -60,21 +60,26 @@ const Todo = () => {
             </button>
           </div>
           <ul className="space-y-2">
-            {tasks.map((task, index) => (
-              <li
-                key={index}
-                className="flex items-center justify-between bg-gray-100 p-3 rounded-md"
-              >
-                <span className="text-gray-800">{task}</span>
-                <button
-                  onClick={() => deleteSingleTask(index)}
-                  className="text-red-500 hover:text-red-700 transition duration-300"
+            {tasks.length > 0 ? (
+              tasks.map((task, index) => (
+                <li
+                  key={index}
+                  className="flex items-center justify-between bg-gray-100 p-3 rounded-md"
                 >
-                  <X size={20} />
-                </button>
-              </li>
-            ))}
+                  <span className="text-gray-800">{task}</span>
+                  <button
+                    onClick={() => deleteSingleTask(index)}
+                    className="text-red-500 hover:text-red-700 transition duration-300"
+                  >
+                    <X size={20} />
+                  </button>
+                </li>
+              ))
+            ) : (
+              <p className="text-gray-500 text-center">No tasks available</p>
+            )}
           </ul>
+
           {tasks.length > 0 && (
             <div className="mt-4 text-right">
               <button
